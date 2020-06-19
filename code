@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner (System.in);
+        
+        int number = scanner.nextInt();
+        int total = scanner.nextInt();
+     int tumadre = 0;
+        int conteo = 0;
+        
+        while (conteo != total){
+        conteo = conteo += 1;
+         int cantidad = scanner.nextInt();
+        tumadre = cantidad;
+        if (cantidad <= number){
+            break;
+        }
+        }
+        if (conteo == total ){
+            System.out.println("Will not crash");
+        }
+        else if (tumadre <= number){
+            System.out.println("Will crash on bridge" + " " + conteo);
+        }
+        // write your code here
+    }
+}
